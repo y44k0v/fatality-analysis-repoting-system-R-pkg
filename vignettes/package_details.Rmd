@@ -1,0 +1,70 @@
+---
+title: "Week 4 Project of Building R Packages"
+author: "Yaakov Miller"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+The following functions read, summarize and plot data from the US National Highway
+Traffic Safety Administration's [Fatality Analysis Reporting System (FARS)](http://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars)
+
+## Functions
+
+The `FARSpckgwk4` package includes the following functions:
+
+* fars_read(filename)
+* make_filename(year)
+* fars_read_years(years)
+* fars_summarize_years(years)
+* fars_map_state(state.num, year)
+
+## Description and Examples
+
+### fars_read(filename)
+
+This function returns a data frame table when the file exists. An
+error is given if the file doesn't exist. The file has to be located in
+the present working directory
+
+    my_data <- fars_read("accident_2013.csv.bz2")
+
+### make_filename(year)
+
+This function creates the FARS file name based in the year covered
+by the data
+
+    my_file <- make_filename(2013)
+    my_file <- make_filename("2013")
+
+### fars_read_years(years)
+
+This function extracts months and years of every FARS
+file within the years specified. An error is retuned for invalid years
+specified when the FARS file doesn't exits for that year
+
+    my_data <- fars_read_years(c(2013, 2014, 2015))
+    my_data <- fars_read_years(c("2013", "2014", "2015"))
+    
+### fars_summarize_years(years)
+
+This functions gives a summary of the fatalities by month for
+every FARS files read by year
+
+    fars_summarize_years(c(2013, 2014))
+    fars_summarize_years(c("2013", "2014"))
+    
+### fars_map_state(state.num, year)
+
+
+This function generates a US state map with the locations of the
+fatalities for a given year. An error is given if the state number is not
+present in the data set. If no fatalities present a messages is generated
+
+    fars_map_state(10, 2015)
+    fars_map_state(36, 2014)
+    fars_map_state(50, 2013)
+
