@@ -23,5 +23,4 @@ every FARS files read by year
     fars_summarize_years(c(2013, 2014))
     fars_summarize_years(c("2013", "2014"))
   }
- @export
 }

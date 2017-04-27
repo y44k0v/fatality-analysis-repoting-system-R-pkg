@@ -27,5 +27,4 @@ present in the data set. If no fatalities present a messages is generated
     fars_map_state(50, 2013)
   }
 
- @export
 }

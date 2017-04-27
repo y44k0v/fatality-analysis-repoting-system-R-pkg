@@ -22,7 +22,7 @@
 #' @importFrom readr read_csv
 #' @importFrom dplyr tbl_df %>%
 #'
-#'@export
+#' @export
 
 
 
@@ -118,7 +118,7 @@ fars_read_years <- function(years) {
 #'     fars_summarize_years(c(2013, 2014))
 #'     fars_summarize_years(c("2013", "2014"))
 #'   }
-#'  @export
+#' @export
 
 fars_summarize_years <- function(years) {
         dat_list <- fars_read_years(years)
@@ -153,7 +153,7 @@ fars_summarize_years <- function(years) {
 #'     fars_map_state(50, 2013)
 #'   }
 #'
-#'  @export
+#' @export
 
 fars_map_state <- function(state.num, year) {
         filename <- make_filename(year)
