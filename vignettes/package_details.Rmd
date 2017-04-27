@@ -1,7 +1,7 @@
 ---
 title: "Week 4 Project of Building R Packages"
 author: "Yaakov Miller"
-date: "`r Sys.Date()`"
+date: "April 27 2017"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Vignette Title}
