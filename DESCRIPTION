@@ -16,6 +16,7 @@ Imports:
     graphics,
     maps,
     readr,
+    tidyr
 Suggests: knitr,
     rmarkdown,
     testthat
