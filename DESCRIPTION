@@ -5,7 +5,7 @@ Version: 0.1.0
 Author: Yaakov Miller
 Maintainer: Yaakov Miller <yourself@somewhere.net>
 Description: Summarize and maps Vehicle fatalities in the USA from the US 
-National Highway Traffic Safety Administration's 
+    National Highway Traffic Safety Administration's 
     Fatality Analysis Reporting System (FARS)
 License: MIT
 Encoding: UTF-8
