@@ -1,4 +1,4 @@
-# FARSpckgwk4
+# Fatality Analysis Reporting System (FARS) R package
 Building R Packages - final Project Coursera
 
 [![Travis-CI Build Status](https://travis-ci.org/ykv001/FARSpckgwk4.svg?branch=master)](https://travis-ci.org/ykv001/FARSpckgwk4)
